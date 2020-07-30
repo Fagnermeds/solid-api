@@ -1,0 +1,19 @@
+{
+  "name": "solid-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Fagnermeds/solid-api.git",
+  "author": "Fagner Medeiros <fagnermeds@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "ts-node-dev --transpile-only --respawn --ignore-watch node_modules src/server.ts"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.7",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "ts-node-dev": "^1.0.0-pre.56",
+    "typescript": "^3.9.7"
+  }
+}
