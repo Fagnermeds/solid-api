@@ -7,9 +7,7 @@ class CreateUserUseCase {
   constructor(
     private usersRepository: IUsersRepository,
     private mailProvider: IMailProvider
-  ) {
-
-  }
+  ) {}
 
   async execute(data: ICreateUserDTO) {
     const userAlreadyExists = await this.usersRepository.findByEmail(data.email);
